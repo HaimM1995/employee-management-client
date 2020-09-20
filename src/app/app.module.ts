@@ -7,11 +7,13 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {Interceptor} from './common/Interceptor';
 import {environment} from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+import { EmployeeFormComponent } from './employee-form/employee-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
+    EmployeeFormComponent,
   ],
   imports: [
     BrowserModule,
