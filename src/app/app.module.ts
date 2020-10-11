@@ -8,17 +8,23 @@ import {Interceptor} from './common/Interceptor';
 import {environment} from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
+import {FormsModule} from '@angular/forms';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     EmployeeFormComponent,
+    UpdateEmployeeComponent,
+    EmployeeDetailsComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
   ],
   providers: [
     { provide: 'BASE_API_URL', useValue: environment.apiUrl },
